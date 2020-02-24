@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+</head>
+<style>
+
+    .t {
+        line-height: 1.5;
+        border-style: solid;
+        border-width: 0px;
+        border-color: #000 #000;
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding: 0px 2px 50px 0px;
+        font-family: Roboto;
+    }
+
+    h3 {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: double #1976D2;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        line-height: 1.2;
+    }
+
+    ol {
+        counter-reset: li; /* Initiate a counter */
+        margin-left: 0; /* Remove the default left margin */
+        padding-left: 0; /* Remove the default left padding */
+    }
+
+    ol > li {
+        position: relative; /* Create a positioning context */
+        margin: 0 0 5px 2em; /* Give each list item a left margin to make room for the numbers */
+        padding: 4px 8px; /* Add some spacing around the content */
+        list-style: none; /* Disable the normal item numbering */
+        background: #f6f6f6;
+    }
+
+    ol > li:before {
+        content: counter(li); /* Use the counter as content */
+        counter-increment: li; /* Increment the counter by 1 */
+        /* Position and style the number */
+        position: absolute;
+        top: 0px;
+        left: -2.2em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        box-sizing: border-box;
+        width: 2em;
+        /* Some space between the number and the content in browsers that support
+           generated content but not positioning it (Camino 2 is one example) */
+        margin-right: 8px;
+        padding: 4px;
+        color: #fff;
+        background: #1976D2;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-align: center;
+    }
+
+</style>
+<body>
+<div class="t">
+    <section><h3>Aplikasi Toko Buku Online Muslim (PHP)</h3>
+        <p>
+            <img src="https://1.bp.blogspot.com/-sXrwYyOu0lc/XXuX8Emp4PI/AAAAAAAAACk/HOL5SgwLYuUbdWSj7w98Kugm4NEeG9bhgCLcBGAsYHQ/s1600/Aplikasi%2BToko%2BMuslim%2B1-min.png"
+                 width="100%"/>
+            <img src="https://1.bp.blogspot.com/-U53prJy7ing/XXuX8PFuuFI/AAAAAAAAACg/g9XyvqX4MuM73KIoBJo-lFUD4Hvkb0H9wCLcBGAsYHQ/s1600/Aplikasi%2BToko%2BMuslim%2B3-min.png"
+                 width="100%"/>
+            <img src="https://1.bp.blogspot.com/-pqEmanuw380/XXuX8BL1VXI/AAAAAAAAACo/8JATJSviZFAbYaSAWusbwDX5Ixw0eT5WQCLcBGAsYHQ/s1600/Aplikasi%2BToko%2BMuslim%2B2-min.png"
+                 width="100%"/></p>
+    </section>
+
+    <section>
+        <h3>Sistem Informasi</h3>
+        <ol>
+            <li>Bahasa : PHP</li>
+            <li>Database : MySQL</li>
+            <li>Developer : bluohazard (Github)</li>
+        </ol>
+        <h3>Panduan Instalasi</h3>
+        <ol>
+            <li>Download dan Instal Aplikasi Xampp di Komputer.</li>
+            <li>Ekstrak file Aplikasi dan Database menggunakan aplikasi WinRAR.</li>
+            <li>Rename folder file Aplikasi menjadi <b>muslim</b>, lalu copas ke folder <strong>htdocs</strong>.</li>
+            <li>Aktifkan <strong>Apache</strong> dan <strong>MySQL</strong> pada Xampp.</li>
+            <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
+            <li>Buat database baru dengan nama <b>muslim_book</b>.</li>
+            <li>Import database aplikasi ke dalam database <b>muslim_book</b>.</li>
+            <li>Jalankan project dengan ketik <strong>localhost/<b>muslim</b></strong>.</li>
+            <li>Login Admin dengan Username : <strong>admin</strong>, Password : <strong>admin</strong>.</li>
+            <li>Selesai.</li>
+        </ol>
+        <h3>Fitur Aplikasi</h3>
+        <ol>
+            <li>Login multi user</li>
+            <li>Halaman FrontEnd</li>
+            <li>Halaman Admin</li>
+            <li>Data Produk dengan Grid</li>
+            <li>Kategori Buku</li>
+            <li>Keranjang Belanja</li>
+            <li>Halaman Checkout</li>
+            <li>dan masih banyak lagi.</li>
+        </ol>
+        <h3>Password rar/zip</h3>
+        <div style="text-align: center;"><i>www.stokcoding.com</i></div>
+    </section>
+</div>
+</body>
+</html>
