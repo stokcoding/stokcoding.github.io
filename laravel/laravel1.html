@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8" name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
 </head>
 <style>
-
     .t {
         line-height: 1.5;
         border-style: solid;
@@ -28,22 +26,31 @@
     }
 
     ol {
-        counter-reset: li; /* Initiate a counter */
-        margin-left: 0; /* Remove the default left margin */
-        padding-left: 0; /* Remove the default left padding */
+        counter-reset: li;
+        /* Initiate a counter */
+        margin-left: 0;
+        /* Remove the default left margin */
+        padding-left: 0;
+        /* Remove the default left padding */
     }
 
-    ol > li {
-        position: relative; /* Create a positioning context */
-        margin: 0 0 5px 2em; /* Give each list item a left margin to make room for the numbers */
-        padding: 4px 8px; /* Add some spacing around the content */
-        list-style: none; /* Disable the normal item numbering */
+    ol>li {
+        position: relative;
+        /* Create a positioning context */
+        margin: 0 0 5px 2em;
+        /* Give each list item a left margin to make room for the numbers */
+        padding: 4px 8px;
+        /* Add some spacing around the content */
+        list-style: none;
+        /* Disable the normal item numbering */
         background: #f6f6f6;
     }
 
-    ol > li:before {
-        content: counter(li); /* Use the counter as content */
-        counter-increment: li; /* Increment the counter by 1 */
+    ol>li:before {
+        content: counter(li);
+        /* Use the counter as content */
+        counter-increment: li;
+        /* Increment the counter by 1 */
         /* Position and style the number */
         position: absolute;
         top: 0px;
@@ -62,56 +69,62 @@
         font-family: "Helvetica Neue", Arial, sans-serif;
         text-align: center;
     }
-
 </style>
-<body>
-<div class="t">
-    <section><h3>Sistem Aplikasi Penjualan Obat Berbasis Web (Laravel)</h3>
-        <p>
-            <img src="https://1.bp.blogspot.com/-3-0CcnxUIJU/XZNYLBGhj2I/AAAAAAAAAaA/_YiBQ8j3TZcdF194QnuSM8XJUNrMYEaVgCLcBGAsYHQ/s1600/Aplikasi%2BPenjualan%2BObat1.png"
-                 width="100%"/>
-            <img src="https://1.bp.blogspot.com/-JvUY-dzkFeA/XZNYLCsQ4RI/AAAAAAAAAZ8/Cq90TqM9gkcps0LK_GFjGl4Bv6phi629ACLcBGAsYHQ/s1600/Aplikasi%2BPenjualan%2BObat2.png"
-                 width="100%"/>
-            <img src="https://1.bp.blogspot.com/-ATK_aAh6Pjo/XZNYLH-gcuI/AAAAAAAAAZ4/wbLhynRGAN0ppqAaCrmFzKWgi29DRCfogCLcBGAsYHQ/s1600/Aplikasi%2BPenjualan%2BObat3.png"
-                 width="100%"/></p>
-    </section>
 
-    <section>
-        <h3>Sistem Informasi</h3>
-        <ol>
-            <li>Bahasa : Laravel</li>
-            <li>Database : MySQL</li>
-            <li>Developer : nafiesl (Github)</li>
-        </ol>
-        <h3>Panduan Instalasi</h3>
-        <ol>
-            <li>Download dan Instal Aplikasi Xampp/Wampserver di Komputer.</li>
-            <li>Ekstrak file Aplikasi dan Database menggunakan aplikasi WinRAR.</li>
-            <li>Rename folder file Aplikasi menjadi<strong> grosir-obat</strong>, lalu copas ke folder <strong>htdocs/www</strong>.</li>
-            <li>Aktifkan <strong>Apache</strong> dan <strong>MySQL</strong> pada Xampp/Wampserver.</li>
-            <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
-            <li>Buat database baru dengan nama <strong>grosir</strong>.</li>
-            <li>Import database aplikasi ke dalam database <strong>grosir</strong>.</li>
-            <li>Jalankan project dengan ketik <strong>localhost/grosir-obat/public</strong>.</li>
-            <li>Login dengan username : <strong>admin</strong>, Password : <strong>secret</strong>.</li>
-            <li>Selesai.</li>
-        </ol>
-        <h3>Fitur Aplikasi</h3>
-        <ol>
-            <li>Login Admin</li>
-            <li>Data Transaksi</li>
-            <li>Transaksi Penjualan Tunai/Kredit</li>
-            <li>Data Produk</li>
-            <li>Data Satuan</li>
-            <li>Data User</li>
-            <li>Laporan-laporan</li>
-            <li>Ganti Password</li>
-            <li>Backup Database</li>
-            <li>dan lainnya.</li>
-        </ol>
-        <h3>Password rar/zip</h3>
-        <div style="text-align: center;"><i>www.stokcoding.com</i></div>
-    </section>
-</div>
+<body>
+    <div class="t">
+        <section>
+            <h3>Aplikasi Pembelian dan Penjualan Berbasis Web (Laravel)</h3>
+            <p>
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjozxcrBiiwxzP6H4UeKACDEUT3Chi4bW9NkQjsPRPt1CZn4avZT7BgeD07ypxFWC9Mvej_OfNt58wl8VwXXg2Cl25Iw-hD-g1vFj8Jbe9sUdGPWwctb4Tn7c_LwZNVq72e_CxrbsHJ3HJ9ik6jRuqXqHEE03gBy9gK8QcQgXJWXJpEX2OQwgW1kROTdA=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgymnJbjroTsb0P-StJgO1jhwl_ekSuuWwAsSvryxvKA0p1W6gXSxKsLnCTYNKhkZnBaA2ACcp9i7MRCODUuLO2W75o45ppemU_gZ22TvAn6VvtUzOLoSLZaAlhSjA75ooWxpHL8VQZpGTgHjHVHuZOiLibsBScXRauqC7zl1CfIDmFi1vNMZsH4QsYZw=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEha8lFPQ_50p-Xyrb_IE7JU3tBbo_XTXZhkJCC1BS5sb0sV-JhCxf9IbVj5c8x5BPyXR5Q4QDVoQmnFPzyQLTZMe_A33d-WA6AVsk53qOXcVoV1k4usl3_xDaxAThrOcN5OEX4ZwrjXwfv3zv0aFqKIS2x3VUHlAJ8Cb03iORiGhFnp7XmR5Z8LaiasrA=s640"
+                    width="100%" />
+            </p>
+        </section>
+
+        <section>
+            <h3>Sistem Requirement</h3>
+            <ol>
+                <li>Bahasa : PHP 5.6</li>
+                <li>Database : MySQL</li>
+                <li>Server : Xampp</li>
+            </ol>
+            <h3>Panduan Instalasi</h3>
+            <ol>
+                <li>Download dan Instal Aplikasi Xampp dan Composer di Komputer.</li>
+                <li>Ekstrak file menggunakan aplikasi WinRAR.</li>
+                <li>Copy folder <strong>MyInventory</strong>, lalu paste ke folder <strong>htdocs</strong>.</li>
+                <li>Aktifkan <strong>Apache</strong> dan <strong>MySQL</strong> pada Xampp.</li>
+                <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
+                <li>Buat database baru dengan nama <strong>my_inventory</strong>.</li>
+                <li>Import database aplikasi ke dalam database <strong>my_inventory</strong>.
+                </li>
+                <li>Buka terminal di dalam project, ketikan <strong>php artisan serve</strong>.</li>
+                <li>Jalankan project dengan ketik <strong>http://127.0.0.1:8000/login</strong>.</li>
+                <li>Login dengan email : <strong>admin@admin.com</strong>, Password : <strong>admin</strong>.</li>
+                <li>Selesai.</li>
+            </ol>
+            <h3>Fitur Aplikasi</h3>
+            <ol>
+                <li>Login Multi User</li>
+                <li>Dashboard</li>
+                <li>Data Produk</li>
+                <li>Data Kategori</li>
+                <li>Data Supplier</li>
+                <li>Data Konsumen</li>
+                <li>Transaksi Pembelian</li>
+                <li>Transaksi Penjualan</li>
+                <li>Data Laporan</li>
+                <li>Data User</li>
+                <li>LogOut</li>
+                <li>dan lainnya.</li>
+            </ol>
+        </section>
+    </div>
+    <br><br>
 </body>
+
 </html>
