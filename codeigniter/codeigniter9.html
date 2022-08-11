@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+</head>
+<style>
+    .t {
+        line-height: 1.5;
+        border-style: solid;
+        border-width: 0px;
+        border-color: #000 #000;
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding: 0px 2px 50px 0px;
+        font-family: Roboto;
+    }
+
+    h3 {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: double #1976D2;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        line-height: 1.2;
+    }
+
+    ol {
+        counter-reset: li;
+        /* Initiate a counter */
+        margin-left: 0;
+        /* Remove the default left margin */
+        padding-left: 0;
+        /* Remove the default left padding */
+    }
+
+    ol>li {
+        position: relative;
+        /* Create a positioning context */
+        margin: 0 0 5px 2em;
+        /* Give each list item a left margin to make room for the numbers */
+        padding: 4px 8px;
+        /* Add some spacing around the content */
+        list-style: none;
+        /* Disable the normal item numbering */
+        background: #f6f6f6;
+    }
+
+    ol>li:before {
+        content: counter(li);
+        /* Use the counter as content */
+        counter-increment: li;
+        /* Increment the counter by 1 */
+        /* Position and style the number */
+        position: absolute;
+        top: 0px;
+        left: -2.2em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        box-sizing: border-box;
+        width: 2em;
+        /* Some space between the number and the content in browsers that support
+           generated content but not positioning it (Camino 2 is one example) */
+        margin-right: 8px;
+        padding: 4px;
+        color: #fff;
+        background: #1976D2;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="t">
+        <section>
+            <h3>Aplikasi Arsip Data Faktur Berbasis Web (Codeigniter)</h3>
+            <p>
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiFuSqA29-cYXbYIx_qif-XS3bQyKvRPpBjP_W8dKfGduhOrFpDJZzftq5C06GgB2zV-RnvuYdgnPHbB_bIHmZT01wui4V4LsAZDKV-NWJGblTk7WLO3P5M7oSw3EaWFP9kLPg5AzcfOG9drWSuqe6Wv3rGCKq2T1Zp-0WMBsE1nf0LznBicBmn8W5N-w=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiQwpqcUr0rKC_vOl1IkCWzZwjIhl3TPwrVvYp__2K1k0GtldyqdTJbnALIjLd1OI-mcNZMX_2AhGOjQ1s8Vva1tLpA4E0b_A6qKe6pPsRiodU9gdlTdSkpxdIRguG6TJj5r7YN7meDqp7hQ__ouBC3Ku9wP0iZiSW5hp8lHPhlWZxG7z4tbblDCPv-zg=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjz6hKYDX1mLtAprfsS5HaCooecoeLBHyYNRVtJUzZ3ZdAUtAMyNTflH1MtQl3MuHQ5ey6ibOzU9WbyGjOrMDkSDymnZg5wDKL__gKWwClkk1cbAqsIChYvOoQPYk1egprOQLILkRIN4SAXsKDXKTvuJMnS6-AYnVtduHstPNjU5V-xt-WhvR21j9XLyA=s640"
+                    width="100%" />
+            </p>
+        </section>
+
+        <section>
+            <h3>Sistem Requirement</h3>
+            <ol>
+                <li>Bahasa : PHP 5.6</li>
+                <li>Database : MySQL</li>
+                <li>Server : Xampp</li>
+            </ol>
+            <h3>Panduan Instalasi</h3>
+            <ol>
+                <li>Download dan Instal Aplikasi Xampp di Komputer.</li>
+                <li>Ekstrak file menggunakan aplikasi WinRAR.</li>
+                <li>Copy folder <strong>faktur</strong>, lalu paste ke folder <strong>htdocs</strong>.</li>
+                <li>Aktifkan Apache dan MySQL pada Xampp.</li>
+                <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
+                <li>Buat database baru dengan nama <strong>faktur</strong>.</li>
+                <li>Import database aplikasi ke dalam database <strong>faktur</strong>.</li>
+                <li>Jalankan project dengan ketik <strong>localhost/faktur</strong>.</li>
+                <li>Login dengan username : <strong>tazkia</strong>, password : <strong>tazkia</strong>.
+                </li>
+                <li>Selesai.</li>
+            </ol>
+            <h3>Fitur Aplikasi</h3>
+            <ol>
+                <li>Login Admin</li>
+                <li>Dashboard</li>
+                <li>Data Faktur</li>
+                <li>Data Produk</li>
+                <li>Data User</li>
+                <li>Data History</li>
+                <li>LogOut</li>
+                <li>dan lainnya.</li>
+            </ol>
+        </section>
+    </div>
+    <br><br>
+</body>
+
+</html>
