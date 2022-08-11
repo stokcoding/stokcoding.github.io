@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+</head>
+<style>
+    .t {
+        line-height: 1.5;
+        border-style: solid;
+        border-width: 0px;
+        border-color: #000 #000;
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding: 0px 2px 50px 0px;
+        font-family: Roboto;
+    }
+
+    h3 {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: double #1976D2;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        line-height: 1.2;
+    }
+
+    ol {
+        counter-reset: li;
+        /* Initiate a counter */
+        margin-left: 0;
+        /* Remove the default left margin */
+        padding-left: 0;
+        /* Remove the default left padding */
+    }
+
+    ol>li {
+        position: relative;
+        /* Create a positioning context */
+        margin: 0 0 5px 2em;
+        /* Give each list item a left margin to make room for the numbers */
+        padding: 4px 8px;
+        /* Add some spacing around the content */
+        list-style: none;
+        /* Disable the normal item numbering */
+        background: #f6f6f6;
+    }
+
+    ol>li:before {
+        content: counter(li);
+        /* Use the counter as content */
+        counter-increment: li;
+        /* Increment the counter by 1 */
+        /* Position and style the number */
+        position: absolute;
+        top: 0px;
+        left: -2.2em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        box-sizing: border-box;
+        width: 2em;
+        /* Some space between the number and the content in browsers that support
+           generated content but not positioning it (Camino 2 is one example) */
+        margin-right: 8px;
+        padding: 4px;
+        color: #fff;
+        background: #1976D2;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="t">
+        <section>
+            <h3>Aplikasi SPK Santri Terbaik Metode SAW (PHP)</h3>
+            <p>
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg8It1dctTvJxia8udJhhhCgIkyzFQfXDxXIswKdYqJHdX6j-Ojze3XGFTC098pota4GYN8lg9eibTg8XPDy3chJkvuKEKaFkenneRvIvDxI0l0Ns9nNNkoTXgiVCZmBSulTOzAgRKc5HDoTbuFFqXdrxP7rRVyi1a6AkBJ5k1i55epS29DfmW9V4kvqQ=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhkmId-YwrFiZ_xEnLNz6Vs7U1AJDpQf9LU3mw5y0xRX8fNr59UFx-kpLbJHNPbCIa4kd702oCE8CvppObWUt6AOQW6s80AEloVXwcXNYllNsItTHqU58ERIGfRTmgeGXWDQ5wNtrUmlv1oYhvOipLcXaL0_bzESA0yMnWksz42H-2XIO63IpQ5wPDzLQ=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhfR6HFYVDj37CsgZ49boe9PqDCJExYcZaHGbFMSSXYL7gguTwqOneQFjBTpizPUnnkxi4yGRL-U4gbPlJKZuGDEJ7Qd6gYeyLr7prS6u6FTo837-l5V0xZEuvDEAzq-6BSNPXk4-azcxKcUXtAqgi6d8AjKd4F6xQwXvoLw5Hnee5Z_ggnXKk9DUHt_A=s640"
+                    width="100%" />
+            </p>
+        </section>
+
+        <section>
+            <h3>Sistem Requirement</h3>
+            <ol>
+                <li>Bahasa : PHP 5.6</li>
+                <li>Database : MySQL</li>
+                <li>Server : Xampp</li>
+            </ol>
+            <h3>Panduan Instalasi</h3>
+            <ol>
+                <li>Download dan Instal Aplikasi Xampp di Komputer.</li>
+                <li>Ekstrak file menggunakan aplikasi WinRAR.</li>
+                <li>Copy folder <strong>saw-santri</strong>, lalu paste ke folder <strong>htdocs</strong>.</li>
+                <li>Aktifkan Apache dan MySQL pada Xampp.</li>
+                <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
+                <li>Buat database baru dengan nama <strong>db_saw</strong>.</li>
+                <li>Import database aplikasi ke dalam database <strong>db_saw</strong>.</li>
+                <li>Jalankan project dengan ketik <strong>localhost/saw-santri</strong>.</li>
+                <li>Login dengan username : <strong>admin</strong>, password : <strong>admin123</strong>.</li>
+                <li>Selesai.</li>
+            </ol>
+            <h3>Fitur Aplikasi</h3>
+            <ol>
+                <li>Login Admin</li>
+                <li>Input Santri</li>
+                <li>Data Santri</li>
+                <li>Data Normalisasi</li>
+                <li>Data Hasil</li>
+                <li>Data Arsip</li>
+                <li>LogOut</li>
+                <li>dan lainnya.</li>
+            </ol>
+        </section>
+    </div>
+    <br><br>
+</body>
+
+</html>
