@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+</head>
+<style>
+    .t {
+        line-height: 1.5;
+        border-style: solid;
+        border-width: 0px;
+        border-color: #000 #000;
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding: 0px 2px 50px 0px;
+        font-family: Roboto;
+    }
+
+    h3 {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: double #1976D2;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        line-height: 1.2;
+    }
+
+    ol {
+        counter-reset: li;
+        /* Initiate a counter */
+        margin-left: 0;
+        /* Remove the default left margin */
+        padding-left: 0;
+        /* Remove the default left padding */
+    }
+
+    ol>li {
+        position: relative;
+        /* Create a positioning context */
+        margin: 0 0 5px 2em;
+        /* Give each list item a left margin to make room for the numbers */
+        padding: 4px 8px;
+        /* Add some spacing around the content */
+        list-style: none;
+        /* Disable the normal item numbering */
+        background: #f6f6f6;
+    }
+
+    ol>li:before {
+        content: counter(li);
+        /* Use the counter as content */
+        counter-increment: li;
+        /* Increment the counter by 1 */
+        /* Position and style the number */
+        position: absolute;
+        top: 0px;
+        left: -2.2em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        box-sizing: border-box;
+        width: 2em;
+        /* Some space between the number and the content in browsers that support
+           generated content but not positioning it (Camino 2 is one example) */
+        margin-right: 8px;
+        padding: 4px;
+        color: #fff;
+        background: #1976D2;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="t">
+        <section>
+            <h3>Aplikasi Inventory Berbasis Web (Laravel)</h3>
+            <p>
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiiDZ65UPC7IYkcAixdHBuQuQPas0zL_1UNzHzNRYXmkS2JahGfYqX-w6FyMnuZIK-_l1gcIPkD6lFYFzZlN0DtcQ8lxoIja8g41nynhvA-82RPsBQjoHngI2oWiKBhaG9revL5wfImsBTMmgn9q4UQ9p7AjuGqtbsbuU6ynz84ebsUL2mDptrwRxITtA=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjIuygEP6MHM4guoX9yLFJ06NouGju6ZhSmJSnEn4akSyATHEErIhKsgiR_r6FApMilX2lIbdzh_oXZlCFt3FH0GeSlGZN_t-TVHbetylPAN2AIC_ox56ZpUaoNuYedOyBcQcAWxOC0aQMVZszWVwweyjJzG7ZaYrpG0RoCAIQFve7EQMWShdrblNPIVQ=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhw3yPVy8-u3OoX8HpUb5YfHY-PfvF39tvmvWpCyG0kE8hOjbIaokTXbZ5ziBqemthmsZDd7kTB5GhCd8yUOJ4WlfyWW_c8l1V-UGdUIb5VkM5mZ7N7I2_wkk3QRua2O6fy3CLFWMZlR4Ya5vQw-pIK1da9gqaK5P9_yQvImxhRga4lyNkR8g9WP1d8Aw=s640"
+                    width="100%" />
+            </p>
+        </section>
+
+        <section>
+            <h3>Sistem Requirement</h3>
+            <ol>
+                <li>Bahasa : PHP 7.4</li>
+                <li>Database : MySQL</li>
+                <li>Server : Xampp</li>
+            </ol>
+            <h3>Panduan Instalasi</h3>
+            <ol>
+                <li>Download dan Instal Aplikasi Xampp dan Composer di Komputer.</li>
+                <li>Ekstrak file menggunakan aplikasi WinRAR.</li>
+                <li>Copy folder <strong>si_inventory</strong>, lalu paste ke folder <strong>htdocs</strong>.</li>
+                <li>Aktifkan <strong>Apache</strong> dan <strong>MySQL</strong> pada Xampp.</li>
+                <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
+                <li>Buat database baru dengan nama <strong>db_inventori</strong>.</li>
+                <li>Import database aplikasi ke dalam database <strong>db_inventori</strong>.</li>
+                <li>Buka terminal di dalam project, ketikan <strong>php artisan serve</strong>.</li>
+                <li>Jalankan project dengan ketik <strong>http://127.0.0.1:8000/login</strong>.</li>
+                <li>Login dengan email : <strong>admin</strong>, Password : <strong>admin</strong>.</li>
+                <li>Selesai.</li>
+            </ol>
+            <h3>Fitur Aplikasi</h3>
+            <ol>
+                <li>Login Admin</li>
+                <li>Dashboard</li>
+                <li>Data Karyawan</li>
+                <li>Data Barang</li>
+                <li>Data Kategori</li>
+                <li>Data Unit</li>
+                <li>Pengambilan Barang</li>
+                <li>Laporan Pengambilan</li>
+                <li>LogOut</li>
+                <li>dan lainnya.</li>
+            </ol>
+        </section>
+    </div>
+    <br><br>
+</body>
+
+</html>
