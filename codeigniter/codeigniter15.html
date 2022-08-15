@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+</head>
+<style>
+    .t {
+        line-height: 1.5;
+        border-style: solid;
+        border-width: 0px;
+        border-color: #000 #000;
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding: 0px 2px 50px 0px;
+        font-family: Roboto;
+    }
+
+    h3 {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: double #1976D2;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        line-height: 1.2;
+    }
+
+    ol {
+        counter-reset: li;
+        /* Initiate a counter */
+        margin-left: 0;
+        /* Remove the default left margin */
+        padding-left: 0;
+        /* Remove the default left padding */
+    }
+
+    ol>li {
+        position: relative;
+        /* Create a positioning context */
+        margin: 0 0 5px 2em;
+        /* Give each list item a left margin to make room for the numbers */
+        padding: 4px 8px;
+        /* Add some spacing around the content */
+        list-style: none;
+        /* Disable the normal item numbering */
+        background: #f6f6f6;
+    }
+
+    ol>li:before {
+        content: counter(li);
+        /* Use the counter as content */
+        counter-increment: li;
+        /* Increment the counter by 1 */
+        /* Position and style the number */
+        position: absolute;
+        top: 0px;
+        left: -2.2em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        box-sizing: border-box;
+        width: 2em;
+        /* Some space between the number and the content in browsers that support
+           generated content but not positioning it (Camino 2 is one example) */
+        margin-right: 8px;
+        padding: 4px;
+        color: #fff;
+        background: #1976D2;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="t">
+        <section>
+            <h3>Aplikasi PPDB Siswa SMA Berbasis Web (Codeigniter)</h3>
+            <p>
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEheuoCUS4__C4xgm2nkmyNpnrolp9LVhx4JS76YFYDKM-OTLSP_JANBGdMq2mDa9dkrsCvTiEAopDNIZ5YkKFyKGcJODjGEPLfTOg9_2TWFV6c9W-hSRpTIlXC6dQqx2d0FiJeSTR7ClerQXeZIpuNTxFblFRKwc-wQds7csbYfoyGU6QOntWkZgL7kRg=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgOnpwJK1sizIuUFg_wbxlLvQSn8PLGc-BvsjG-9liPTg93X5y4eNQGTnhAFLmaLYH_izFm8XLqQCcrPyNFwpAalalhApwsPiI-wa1GL8Xd-M30OLjwvmXR4kiGa_mWAi4Qek8sYx0jYw38AFxPMUIkXjCoY74Sx4PjvBnQcKnaDhUkb6nSxOlGUimUrQ=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi_0Agh7W-cRVu5mEcAM_Ulzj5DXung9SCSp4DlktY-aUidYMA1_8kTMkXobmiDhA05V2Ce3efJyItN9abwfFZ4HhqcSIyUOdoHqdvbBjyOZWWQJemc_ON07qcaL-sPVVGi4Ujj09eilSj9LZ0Hifz7SY6_b5e6OxfteaRu5DKLH78bovwtakill0Sjww=s640"
+                    width="100%" />
+            </p>
+        </section>
+
+        <section>
+            <h3>Sistem Requirement</h3>
+            <ol>
+                <li>Bahasa : PHP 5.6</li>
+                <li>Database : MySQL</li>
+                <li>Server : Xampp</li>
+            </ol>
+            <h3>Panduan Instalasi</h3>
+            <ol>
+                <li>Download dan Instal Aplikasi Xampp di Komputer.</li>
+                <li>Ekstrak file menggunakan aplikasi WinRAR.</li>
+                <li>Copy folder <strong>ppdb </strong>, lalu paste ke folder <strong>htdocs</strong>.</li>
+                <li>Aktifkan Apache dan MySQL pada Xampp.</li>
+                <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
+                <li>Buat database baru dengan nama <strong>ppdb </strong>.</li>
+                <li>Import database aplikasi ke dalam database <strong>ppdb </strong>.</li>
+                <li>Jalankan project dengan ketik <strong>localhost/ppdb/auth </strong>.</li>
+                <li>Login dengan username : <strong>admin</strong>, password : <strong>admin</strong>.</li>
+                <li>Selesai.</li>
+            </ol>
+            <h3>Fitur Aplikasi</h3>
+            <ol>
+                <li>Halaman Frontend</li>
+                <li>Login Admin</li>
+                <li>Dashboard</li>
+                <li>Data Profil</li>
+                <li>Data Pendaftaran</li>
+                <li>Data Pengumuman</li>
+                <li>Bukti Pendaftaran</li>
+                <li>Data Siswa</li>
+                <li>Konfirgurasi</li>
+                <li>LogOut</li>
+                <li>dan lainnya.</li>
+            </ol>
+        </section>
+    </div>
+    <br><br>
+</body>
+
+</html>
