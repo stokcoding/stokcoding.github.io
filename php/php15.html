@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+</head>
+<style>
+    .t {
+        line-height: 1.5;
+        border-style: solid;
+        border-width: 0px;
+        border-color: #000 #000;
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding: 0px 2px 50px 0px;
+        font-family: Roboto;
+    }
+
+    h3 {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: double #1976D2;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        line-height: 1.2;
+    }
+
+    ol {
+        counter-reset: li;
+        /* Initiate a counter */
+        margin-left: 0;
+        /* Remove the default left margin */
+        padding-left: 0;
+        /* Remove the default left padding */
+    }
+
+    ol>li {
+        position: relative;
+        /* Create a positioning context */
+        margin: 0 0 5px 2em;
+        /* Give each list item a left margin to make room for the numbers */
+        padding: 4px 8px;
+        /* Add some spacing around the content */
+        list-style: none;
+        /* Disable the normal item numbering */
+        background: #f6f6f6;
+    }
+
+    ol>li:before {
+        content: counter(li);
+        /* Use the counter as content */
+        counter-increment: li;
+        /* Increment the counter by 1 */
+        /* Position and style the number */
+        position: absolute;
+        top: 0px;
+        left: -2.2em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        box-sizing: border-box;
+        width: 2em;
+        /* Some space between the number and the content in browsers that support
+           generated content but not positioning it (Camino 2 is one example) */
+        margin-right: 8px;
+        padding: 4px;
+        color: #fff;
+        background: #1976D2;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="t">
+        <section>
+            <h3>Sistem Informasi Masjid Berbasis Web (PHP)</h3>
+            <p>
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgzLBwifTShgj5cZfg2mhFKR3jdUxR0OCo8QVNgWIzKbA9RSYoULiDbxcpGu8gOLS68IENJm5XY_vSbWEmRUve67TThlg7jrQffFU6TOisoUMg8Ec0txvJ3-58UBkatTYt3AyW749R4dkr0wkDsgKYTxbrf_hWUSxX1xngCd1AtxfbLsK1Qm2JIDpGQCQ=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEh4aGTXX_68yK7PHWnRHcgxoSSKw0CPezp7JVwxRRbCAqcU_MHZJEXezdlGOl2J_wiNTfZIqalGHksFvRKCiTK7pESfYAdpiZrJaKTqoan1vqZJ59HMOINtjkee_hfL-8mNNgyNmhYfbcAOVPEmdCju3G1b9tMky6TXht0DdzNCeVjhdpQgf09037rQ_g=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjvX4DgR57qVIX8Vlztf_MzQtzRduFd6hpBhVNrMohL-BMXeBTYd-TzTJHSwyRTMOsEop2k7s4gcxAGLzZMAthN2jXy9RWK5Ig3EVr3kWEYFuXWwOV5j4JQnW__NgdMrJ2AmXYYbUFHpjhKuxeZ-CsHOzcFO59MokMECJtDFN_27y7broI31W5YWldfeg=s640"
+                    width="100%" />
+            </p>
+        </section>
+
+        <section>
+            <h3>Sistem Requirement</h3>
+            <ol>
+                <li>Bahasa : PHP 5.6</li>
+                <li>Database : MySQL</li>
+                <li>Server : Xampp</li>
+            </ol>
+            <h3>Panduan Instalasi</h3>
+            <ol>
+                <li>Download dan Instal Aplikasi Xampp di Komputer.</li>
+                <li>Ekstrak file menggunakan aplikasi WinRAR.</li>
+                <li>Copy folder <strong>masjid</strong>, lalu paste ke folder <strong>htdocs</strong>.</li>
+                <li>Aktifkan Apache dan MySQL pada Xampp.</li>
+                <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
+                <li>Buat database baru dengan nama <strong>masjid</strong>.</li>
+                <li>Import database aplikasi ke dalam database <strong>masjid</strong>.</li>
+                <li>Jalankan project dengan ketik <strong>localhost/masjid/login.php</strong>.</li>
+                <li>Login dengan username : <strong>admin</strong>, password : <strong>admin</strong>.</li>
+                <li>Selesai.</li>
+            </ol>
+            <h3>Fitur Aplikasi</h3>
+            <ol>
+                <li>Halaman Frontend</li>
+                <li>Login Multi User</li>
+                <li>Dashboard</li>
+                <li>Profil Masjid</li>
+                <li>Jadwal Kajian</li>
+                <li>Data Galeri</li>
+                <li>Transaksi Donasi</li>
+                <li>Data Kontak</li>
+                <li>Data Pengurus</li>
+                <li>Data Kegiatan</li>
+                <li>Data Rekening Bank</li>
+                <li>LogOut</li>
+                <li>dan lainnya.</li>
+            </ol>
+        </section>
+    </div>
+    <br><br>
+</body>
+
+</html>
