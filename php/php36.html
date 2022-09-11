@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+</head>
+<style>
+    .t {
+        line-height: 1.5;
+        border-style: solid;
+        border-width: 0px;
+        border-color: #000 #000;
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding: 0px 2px 50px 0px;
+        font-family: Roboto;
+    }
+
+    h3 {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: double #1976D2;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        line-height: 1.2;
+    }
+
+    ol {
+        counter-reset: li;
+        /* Initiate a counter */
+        margin-left: 0;
+        /* Remove the default left margin */
+        padding-left: 0;
+        /* Remove the default left padding */
+    }
+
+    ol>li {
+        position: relative;
+        /* Create a positioning context */
+        margin: 0 0 5px 2em;
+        /* Give each list item a left margin to make room for the numbers */
+        padding: 4px 8px;
+        /* Add some spacing around the content */
+        list-style: none;
+        /* Disable the normal item numbering */
+        background: #f6f6f6;
+    }
+
+    ol>li:before {
+        content: counter(li);
+        /* Use the counter as content */
+        counter-increment: li;
+        /* Increment the counter by 1 */
+        /* Position and style the number */
+        position: absolute;
+        top: 0px;
+        left: -2.2em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        box-sizing: border-box;
+        width: 2em;
+        /* Some space between the number and the content in browsers that support
+           generated content but not positioning it (Camino 2 is one example) */
+        margin-right: 8px;
+        padding: 4px;
+        color: #fff;
+        background: #1976D2;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="t">
+        <section>
+            <h3>Aplikasi Toko Daging Ayam Berbasis Web (PHP)</h3>
+            <p>
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj22cBgUiRj1vbaHjRlCJPd3kke_hZgEq0SxTFBujPPYLxUM-QkxGJiiZHQgmiTWIpy2diIGnv7rC4n5GeLRwyDrlVZlR_VZKzJbPE1jlI5LXeuWxqRT2CWwV-zU34PRLvGDLlTEdSC0fNEtosTqhDqwSeCszCHTwb97jA6VJWHbLxR0dctbIYFPNgT6g=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgRJSA9p2usSssIwTBpzd_c3_uAjcogXMDHihjYBl4vlGM468I8ZJEt_Fky9_4gZAT9gib8P2rI9DjaLVrOLtw0dsMw4D9uWNyK0WfJkQG7Zjii1Ue0Bi4D_S89SEvHAM8cR9wyjYCOmxpR2kD8R-klQsHUAZXn0HTK4LOGjbG8wJr-1x9vF02oCtS_nQ=s640"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi2HFhJSo01XkGpHqHTPHgvDozA-chgH05U5r7A_lZiKGkhfbIZasd0_wbw5KRG7kAMWvK4E9Qh_9Pe1Y4rf3H1oCl0DUgo19VVfwoz-X0r9rKrt8vAsCOy93G4PjzQIJivk_tJoj73e_J8MV0QWDtVDJTRz18XEmkiw35kYFpZXuQrtyFQS3A663ZDcA=s640"
+                    width="100%" />
+            </p>
+        </section>
+
+        <section>
+            <h3>Sistem Requirement</h3>
+            <ol>
+                <li>Bahasa : PHP 5.6</li>
+                <li>Database : MySQL</li>
+                <li>Server : Xampp</li>
+            </ol>
+            <h3>Panduan Instalasi</h3>
+            <ol>
+                <li>Download dan Instal Aplikasi Xampp di Komputer.</li>
+                <li>Ekstrak file menggunakan aplikasi WinRAR.</li>
+                <li>Copy folder <strong>daging_online</strong>, lalu paste ke folder <strong>htdocs</strong>.</li>
+                <li>Aktifkan Apache dan MySQL pada Xampp.</li>
+                <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
+                <li>Buat database baru dengan nama <strong>daging_online</strong>.</li>
+                <li>Import database aplikasi ke dalam database <strong>daging_online</strong>.</li>
+                <li>Jalankan project dengan ketik <strong>localhost/daging_online</strong>.</li>
+                <li>Login dengan email : <strong>admin@gmail.com</strong>, password : <strong>admin</strong>.</li>
+                <li>Selesai.</li>
+            </ol>
+            <h3>Fitur Aplikasi</h3>
+            <ol>
+                <li>Login Multi User</li>
+                <li>Registrasi User</li>
+                <li>Halaman Frontend</li>
+                <li>Katalog Ayam</li>
+                <li>Keranjang Belanja</li>
+                <li>Proses Checkout</li>
+                <li>Data Galeri</li>
+                <li>Data Transaksi</li>
+                <li>Data Driver</li>
+                <li>Data User</li>
+                <li>LogOut</li>
+                <li>dan lainnya.</li>
+            </ol>
+        </section>
+    </div>
+    <br><br>
+</body>
+
+</html>
