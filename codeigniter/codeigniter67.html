@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+</head>
+<style>
+    .t {
+        line-height: 1.5;
+        border-style: solid;
+        border-width: 0px;
+        border-color: #000 #000;
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding: 0px 2px 50px 0px;
+        font-family: Roboto;
+    }
+
+    h3 {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: double #1976D2;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        line-height: 1.2;
+    }
+
+    ol {
+        counter-reset: li;
+        /* Initiate a counter */
+        margin-left: 0;
+        /* Remove the default left margin */
+        padding-left: 0;
+        /* Remove the default left padding */
+    }
+
+    ol>li {
+        position: relative;
+        /* Create a positioning context */
+        margin: 0 0 5px 2em;
+        /* Give each list item a left margin to make room for the numbers */
+        padding: 4px 8px;
+        /* Add some spacing around the content */
+        list-style: none;
+        /* Disable the normal item numbering */
+        background: #f6f6f6;
+    }
+
+    ol>li:before {
+        content: counter(li);
+        /* Use the counter as content */
+        counter-increment: li;
+        /* Increment the counter by 1 */
+        /* Position and style the number */
+        position: absolute;
+        top: 0px;
+        left: -2.2em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        box-sizing: border-box;
+        width: 2em;
+        /* Some space between the number and the content in browsers that support
+           generated content but not positioning it (Camino 2 is one example) */
+        margin-right: 8px;
+        padding: 4px;
+        color: #fff;
+        background: #1976D2;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="t">
+        <section>
+            <h3>Aplikasi Monitoring Dana Desa Berbasis Web (Codeigniter)</h3>
+            <p>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilY2_5V6qclqVwVzhtwafFS7zWCkE5UYcdsntwf15Jx_Eie1vghoRNfCreIf6NezzovtonaAn1fWIGVeFmOcat6wFbiErEAqZhkYvqi3yNslS8NVFU-bZSvhkwKU3Z_tJWj0SysEwDkJ-qcZCJafK8IUvXgJzsvHdoGURFYZvgPc8ncK7LWU7SkgfuwA/s1920/Aplikasi%20Monitoring%20Dana%20Desa%20Berbasis%20Web%20(Codeigniter)%201.png"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhefT1DT4-t2CSeq4WkBTQtyltayy2T08TGCBK9XG5Hv8QJYH_qAuoLPiJsi6n5jYjwEOIcdnpm519yjwg_m1c_ci1pjlTzBG8s5-uyOGlF4tVfTT4qrnDWLy1h_jHrvogEhz22FA9sWbmh3HMpK4UIaTxd4Co_a6E0hfpOBB_uhEhfINna0XN0_u91CQ/s1920/Aplikasi%20Monitoring%20Dana%20Desa%20Berbasis%20Web%20(Codeigniter)%203.png"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPrSwf_HnekU8JPl-9krvabTly3Bs97fYTXhW6XeB8kKReIvkQFPCJjyHWjgC50fK4t3ACp1yugY2iP5owT3TgR1-JjXxe1B9w-LMoQ1Ry98N1y3ZsuWF6y7PjcmDKYrLmvT-7n5ArcVxe_qENCkupvp7A2HzmkEy44Our3rqh6WW-5MPFE2I1a5spVQ/s1920/Aplikasi%20Monitoring%20Dana%20Desa%20Berbasis%20Web%20(Codeigniter)%202.png"
+                    width="100%" />
+            </p>
+        </section>
+
+        <section>
+            <h3>Sistem Requirement</h3>
+            <ol>
+                <li>Bahasa : PHP 7.2</li>
+                <li>Database : MySQL</li>
+                <li>Server : Xampp</li>
+            </ol>
+            <h3>Panduan Instalasi</h3>
+            <ol>
+                <li>Download dan Instal Aplikasi Xampp di Komputer.</li>
+                <li>Ekstrak file menggunakan aplikasi WinRAR.</li>
+                <li>Copy folder <strong>dandes</strong>, lalu paste ke folder <strong>htdocs</strong>.</li>
+                <li>Aktifkan Apache dan MySQL pada Xampp.</li>
+                <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
+                <li>Buat database baru dengan nama <strong>dandes</strong>.</li>
+                <li>Import database aplikasi ke dalam database <strong>dandes</strong>.</li>
+                <li>Jalankan project dengan ketik <strong>localhost/dandes </strong>.</li>
+                <li>Login dengan username : <strong>admin</strong>, password : <strong>admin</strong>.</li>
+                <li>Selesai.</li>
+            </ol>
+            <h3>Fitur Aplikasi</h3>
+            <ol>
+                <li>Login Multi User</li>
+                <li>Dashboard</li>
+                <li>Data User</li>
+                <li>Data Instansi</li>
+                <li>Data Desa</li>
+                <li>Dana Masuk</li>
+                <li>Data Keluar</li>
+                <li>Laporan Dana Desa</li>
+                <li>Laporan Pekerjaan</li>
+                <li>Logout</li>
+                <li>dan lainnya.</li>
+            </ol>
+        </section>
+    </div>
+    <br><br>
+</body>
+
+</html>
