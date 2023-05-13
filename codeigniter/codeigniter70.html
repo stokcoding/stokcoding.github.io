@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+</head>
+<style>
+    .t {
+        line-height: 1.5;
+        border-style: solid;
+        border-width: 0px;
+        border-color: #000 #000;
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding: 0px 2px 50px 0px;
+        font-family: Roboto;
+    }
+
+    h3 {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        border-bottom: double #1976D2;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        line-height: 1.2;
+    }
+
+    ol {
+        counter-reset: li;
+        /* Initiate a counter */
+        margin-left: 0;
+        /* Remove the default left margin */
+        padding-left: 0;
+        /* Remove the default left padding */
+    }
+
+    ol>li {
+        position: relative;
+        /* Create a positioning context */
+        margin: 0 0 5px 2em;
+        /* Give each list item a left margin to make room for the numbers */
+        padding: 4px 8px;
+        /* Add some spacing around the content */
+        list-style: none;
+        /* Disable the normal item numbering */
+        background: #f6f6f6;
+    }
+
+    ol>li:before {
+        content: counter(li);
+        /* Use the counter as content */
+        counter-increment: li;
+        /* Increment the counter by 1 */
+        /* Position and style the number */
+        position: absolute;
+        top: 0px;
+        left: -2.2em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        box-sizing: border-box;
+        width: 2em;
+        /* Some space between the number and the content in browsers that support
+           generated content but not positioning it (Camino 2 is one example) */
+        margin-right: 8px;
+        padding: 4px;
+        color: #fff;
+        background: #1976D2;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="t">
+        <section>
+            <h3>Sistem Informasi Koperasi Simpan Pinjam (Codeigniter)</h3>
+            <p>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcUOSsq6MPGawhgtyj2sCl2DRQDlZFNT2OP0UvVzBeStroALVl3XWzpwgzkddve2wkz8pq_YD4jBxb9wcpE8v1CEeS2T54FHA5rPWpW9v8K2wSxg3ZfUqEU5_hskB7Pdfetk6D93QgPhzzvXKsBlZurv9pj3WIkABm-r3faIjoczThUXaXhhSn-YKE7Q/s1920/Sistem%20Informasi%20Koperasi%20Simpan%20Pinjam%20(Codeigniter)%201.png"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8iTnFopfgd10RyJ5xmE58wO7wt495Qtp-TFN7ZgLYuAT7FDKJy01KkX7ZbXE8JZ0g74animSN4zCF2GJDfhG4i3sVXon5-oBHh2804fjkTMl10f2tE1Lm5b6DW3Ud_9WiZvyOtXNJPvylmR3E_b2R1VNF0X_ulNMgTMV8ChSFWOSzgxZo81yMQdWQUw/s1920/Sistem%20Informasi%20Koperasi%20Simpan%20Pinjam%20(Codeigniter)%202.png"
+                    width="100%" />
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisBBV0qdRC1LmvL1brkLZ4X9v6K8iX6pg5wFF3M5ckzffANkICbpKBp8qH8K8Unxl3j5kmx_5paCfA3wD-OEDfbAxmqE1WKSWYFQ0RhVjoeHIFXG9HgxIy_pzNXFzvJrOnmILXioJXe38cTdO1Tw-G1gWK3BEdD6sxfLVTJKGErwe8wELXj1yFYtKKmg/s1920/Sistem%20Informasi%20Koperasi%20Simpan%20Pinjam%20(Codeigniter)%203.png"
+                    width="100%" />
+            </p>
+        </section>
+
+        <section>
+            <h3>Sistem Requirement</h3>
+            <ol>
+                <li>Bahasa : PHP 7.4</li>
+                <li>Database : MySQL</li>
+                <li>Server : Xampp</li>
+            </ol>
+            <h3>Panduan Instalasi</h3>
+            <ol>
+                <li>Download dan Instal Aplikasi Xampp di Komputer.</li>
+                <li>Ekstrak file menggunakan aplikasi WinRAR.</li>
+                <li>Copy folder <strong>koperasi</strong>, lalu paste ke folder <strong>htdocs</strong>.</li>
+                <li>Aktifkan Apache dan MySQL pada Xampp.</li>
+                <li>Buka browser, lalu buka alamat <strong>localhost/phpMyAdmin</strong>.</li>
+                <li>Buat database baru dengan nama <strong>koperasi</strong>.</li>
+                <li>Import database aplikasi ke dalam database <strong>koperasi</strong>.</li>
+                <li>Jalankan project dengan ketik <strong>localhost/koperasi </strong>.</li>
+                <li>Login dengan username : <strong>admin</strong>, password : <strong>admin</strong>.</li>
+                <li>Selesai.</li>
+            </ol>
+            <h3>Fitur Aplikasi</h3>
+            <ol>
+                <li>Login Multi User</li>
+                <li>Dashboard</li>
+                <li>Data Anggota</li>
+                <li>Data Pengguna</li>
+                <li>Data Kategori</li>
+                <li>Data Simpan</li>
+                <li>Data Pinjam</li>
+                <li>Data Laporan</li>
+                <li>Ubah Password</li>
+                <li>Logout</li>
+                <li>dan lainnya.</li>
+            </ol>
+        </section>
+    </div>
+    <br><br>
+</body>
+
+</html>
